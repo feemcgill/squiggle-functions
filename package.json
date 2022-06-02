@@ -1,0 +1,9 @@
+{
+  "name": "squiggle_dao_scripts",
+  "private": true,
+  "dependencies": {
+    "algoliasearch": "^4.13.0",
+    "graphql-request": "^4.2.0",
+    "node-fetch": "^2.6.7"
+  }
+}
