@@ -1,5 +1,5 @@
 [functions."test-function"]
 schedule = "@hourly"
 
-
-
+[functions."update-squigs-background"]
+schedule = "@hourly"
