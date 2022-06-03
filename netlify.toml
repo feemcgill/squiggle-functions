@@ -1,5 +1,2 @@
-[functions."test-function"]
-schedule = "@hourly"
-
 [functions."schedule-update"]
-schedule = "*/5 * * * *"
+schedule = "@hourly"
