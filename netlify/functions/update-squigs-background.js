@@ -18,9 +18,12 @@ const write_to_algolia = async (objects, current_time) => {
   if (objects.length > 0) {
     for (let i = 0; i < objects.length; i++) {
       const element = objects[i]
+      element.tokenId = parseInt(element.tokenId)
       element.objectID = element.tokenId
       element.updated = current_time
     }
+    console.log('NEW SHIT')
+    console.log(objects)
     await algolia_index
       .partialUpdateObjects(objects, {
         createIfNotExists: true,
