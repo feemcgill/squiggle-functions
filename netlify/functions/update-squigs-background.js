@@ -22,7 +22,6 @@ const write_to_algolia = async (objects, current_time) => {
       element.objectID = element.tokenId
       element.updated = current_time
     }
-    console.log('NEW SHIT')
     console.log(objects)
     await algolia_index
       .partialUpdateObjects(objects, {
